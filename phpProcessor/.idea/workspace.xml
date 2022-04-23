@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c80ad0a2-0312-4240-8f89-d4ee4ba921c6" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="Enum" />
+        <option value="Class" />
+        <option value="JUnit4 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="/usr/Programming/java/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="/usr/Programming/java/apache-maven-3.6.3/conf/settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1p09xP6ADjrfBJOeT6XLT2M1RJs" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/files/normal/Strings.php" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="util" />
+      <recent name="generator" />
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/files/normal" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.MainTest.check">
+    <configuration name="ConversionUtilTest.convertAntlrTreeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="phpProcessor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="util" />
+      <option name="MAIN_CLASS_NAME" value="util.ConversionUtilTest" />
+      <option name="METHOD_NAME" value="convertAntlrTreeTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainTest.check" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="phpProcessor" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MainTest" />
+      <option name="METHOD_NAME" value="check" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScriptParserTest.parseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="phpProcessor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="generator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="generator" />
+      <option name="MAIN_CLASS_NAME" value="generator.ScriptParserTest" />
+      <option name="METHOD_NAME" value="parseTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringParserTest.testEntropy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="phpProcessor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="util" />
+      <option name="MAIN_CLASS_NAME" value="util.StringParserTest" />
+      <option name="METHOD_NAME" value="testEntropy" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringParserTest.testStringParser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="phpProcessor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="util" />
+      <option name="MAIN_CLASS_NAME" value="util.StringParserTest" />
+      <option name="METHOD_NAME" value="testStringParser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MainTest.check" />
+        <item itemvalue="JUnit.ScriptParserTest.parseTest" />
+        <item itemvalue="JUnit.StringParserTest.testStringParser" />
+        <item itemvalue="JUnit.StringParserTest.testEntropy" />
+        <item itemvalue="JUnit.ConversionUtilTest.convertAntlrTreeTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c80ad0a2-0312-4240-8f89-d4ee4ba921c6" name="Default Changelist" comment="" />
+      <created>1614309386772</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1614309386772</updated>
+      <workItem from="1614309391803" duration="1910000" />
+      <workItem from="1614522708687" duration="330000" />
+      <workItem from="1615346877192" duration="4206000" />
+      <workItem from="1615358830108" duration="32000" />
+      <workItem from="1615359306407" duration="165000" />
+      <workItem from="1615384718973" duration="807000" />
+      <workItem from="1615704682388" duration="971000" />
+      <workItem from="1616208276027" duration="35000" />
+      <workItem from="1616653403614" duration="1464000" />
+      <workItem from="1616655545668" duration="166000" />
+      <workItem from="1650337431961" duration="84000" />
+      <workItem from="1650337547554" duration="2040000" />
+      <workItem from="1650346901287" duration="7595000" />
+      <workItem from="1650373263150" duration="3575000" />
+      <workItem from="1650419155592" duration="8730000" />
+      <workItem from="1650506499677" duration="10671000" />
+      <workItem from="1650519837318" duration="7062000" />
+      <workItem from="1650555323743" duration="3212000" />
+      <workItem from="1650591723120" duration="9063000" />
+      <workItem from="1650605288224" duration="7473000" />
+      <workItem from="1650614710472" duration="155000" />
+      <workItem from="1650635370010" duration="4582000" />
+      <workItem from="1650678546930" duration="10323000" />
+      <workItem from="1650698801272" duration="1377000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="850" y="295" width="374" height="632" key="#com.intellij.ide.util.MemberChooser" timestamp="1650690958237">
+      <screen x="67" y="27" width="1853" height="945" />
+    </state>
+    <state x="850" y="295" width="374" height="632" key="#com.intellij.ide.util.MemberChooser/67.27.1853.945@67.27.1853.945" timestamp="1650690958237" />
+    <state x="1121" y="397" width="554" height="562" key="#com.intellij.ide.util.MemberChooser/67.27.2493.1305@67.27.2493.1305" timestamp="1650425718664" />
+    <state x="795" y="315" width="524" height="507" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1650595854533">
+      <screen x="67" y="27" width="1853" height="945" />
+    </state>
+    <state x="795" y="315" width="524" height="507" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1853.945@67.27.1853.945" timestamp="1650595854533" />
+    <state x="1046" y="425" width="524" height="507" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.2493.1305@67.27.2493.1305" timestamp="1650351302221" />
+    <state x="832" y="323" width="380" height="351" key="FileChooserDialogImpl" timestamp="1650613059025">
+      <screen x="67" y="27" width="1853" height="945" />
+    </state>
+    <state x="832" y="323" width="380" height="351" key="FileChooserDialogImpl/67.27.1853.945@67.27.1853.945" timestamp="1650613059025" />
+    <state x="1096" y="436" width="424" height="484" key="FileChooserDialogImpl/67.27.2493.1305@67.27.2493.1305" timestamp="1650419516026" />
+    <state width="1799" height="368" key="GridCell.Tab.0.bottom" timestamp="1650701359631">
+      <screen x="67" y="27" width="1853" height="945" />
+    </state>
+    <state width="1799" height="368" key="GridCell.Tab.0.bottom/67.27.1853.945@67.27.1853.945" timestamp="1650701359631" />
+    <state width="2439" height="550" key="GridCell.Tab.0.bottom/67.27.2493.1305@67.27.2493.1305" timestamp="1650435621121" />
+    <state width="1799" height="368" key="GridCell.Tab.0.center" timestamp="1650701359631">
+      <screen x="67" y="27" width="1853" height="945" />
+    </state>
+    <state width="1799" height="368" key="GridCell.Tab.0.center/67.27.1853.945@67.27.1853.945" timestamp="1650701359631" />
+    <state width="2439" height="550" key="GridCell.Tab.0.center/67.27.2493.1305@67.27.2493.1305" timestamp="1650435621120" />
+    <state width="1799" height="368" key="GridCell.Tab.0.left" timestamp="1650701359630">
+      <screen x="67" y="27" width="1853" height="945" />
+    </state>
+    <state width="1799" height="368" key="GridCell.Tab.0.left/67.27.1853.945@67.27.1853.945" timestamp="1650701359630" />
+    <state width="2439" height="550" key="GridCell.Tab.0.left/67.27.2493.1305@67.27.2493.1305" timestamp="1650435621120" />
+    <state width="1799" height="368" key="GridCell.Tab.0.right" timestamp="1650701359631">
+      <screen x="67" y="27" width="1853" height="945" />
+    </state>
+    <state width="1799" height="368" key="GridCell.Tab.0.right/67.27.1853.945@67.27.1853.945" timestamp="1650701359631" />
+    <state width="2439" height="550" key="GridCell.Tab.0.right/67.27.2493.1305@67.27.2493.1305" timestamp="1650435621120" />
+    <state width="1799" height="368" key="GridCell.Tab.1.bottom" timestamp="1650701359633">
+      <screen x="67" y="27" width="1853" height="945" />
+    </state>
+    <state width="1799" height="368" key="GridCell.Tab.1.bottom/67.27.1853.945@67.27.1853.945" timestamp="1650701359633" />
+    <state width="2439" height="550" key="GridCell.Tab.1.bottom/67.27.2493.1305@67.27.2493.1305" timestamp="1650435621122" />
+    <state width="1799" height="368" key="GridCell.Tab.1.center" timestamp="1650701359632">
+      <screen x="67" y="27" width="1853" height="945" />
+    </state>
+    <state width="1799" height="368" key="GridCell.Tab.1.center/67.27.1853.945@67.27.1853.945" timestamp="1650701359632" />
+    <state width="2439" height="550" key="GridCell.Tab.1.center/67.27.2493.1305@67.27.2493.1305" timestamp="1650435621121" />
+    <state width="1799" height="368" key="GridCell.Tab.1.left" timestamp="1650701359632">
+      <screen x="67" y="27" width="1853" height="945" />
+    </state>
+    <state width="1799" height="368" key="GridCell.Tab.1.left/67.27.1853.945@67.27.1853.945" timestamp="1650701359632" />
+    <state width="2439" height="550" key="GridCell.Tab.1.left/67.27.2493.1305@67.27.2493.1305" timestamp="1650435621121" />
+    <state width="1799" height="368" key="GridCell.Tab.1.right" timestamp="1650701359632">
+      <screen x="67" y="27" width="1853" height="945" />
+    </state>
+    <state width="1799" height="368" key="GridCell.Tab.1.right/67.27.1853.945@67.27.1853.945" timestamp="1650701359632" />
+    <state width="2439" height="550" key="GridCell.Tab.1.right/67.27.2493.1305@67.27.2493.1305" timestamp="1650435621121" />
+    <state x="846" y="336" width="924" height="684" key="Maven.ArtifactSearchDialog" timestamp="1650348089000">
+      <screen x="67" y="27" width="2493" height="1305" />
+    </state>
+    <state x="846" y="336" width="924" height="684" key="Maven.ArtifactSearchDialog/67.27.2493.1305@67.27.2493.1305" timestamp="1650348089000" />
+    <state x="841" y="441" width="296" height="159" key="NewPhpFileDialog" timestamp="1650593481656">
+      <screen x="67" y="27" width="1853" height="945" />
+    </state>
+    <state x="841" y="441" width="296" height="159" key="NewPhpFileDialog/67.27.1853.945@67.27.1853.945" timestamp="1650593481656" />
+    <state x="1109" y="599" width="398" height="159" key="NewPhpFileDialog/67.27.2493.1305@67.27.2493.1305" timestamp="1650419272653" />
+    <state x="795" y="313" width="1024" height="845" key="SettingsEditor" timestamp="1650375681149">
+      <screen x="67" y="27" width="2493" height="1305" />
+    </state>
+    <state x="795" y="313" width="1024" height="845" key="SettingsEditor/67.27.2493.1305@67.27.2493.1305" timestamp="1650375681149" />
+    <state x="737" y="374" key="com.intellij.ide.util.TipDialog" timestamp="1650698801395">
+      <screen x="67" y="27" width="1853" height="945" />
+    </state>
+    <state x="737" y="374" key="com.intellij.ide.util.TipDialog/67.27.1853.945@67.27.1853.945" timestamp="1650698801395" />
+    <state x="968" y="506" key="com.intellij.ide.util.TipDialog/67.27.2493.1305@67.27.2493.1305" timestamp="1650419215576" />
+    <state x="825" y="272" width="434" height="455" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1650683909783">
+      <screen x="67" y="27" width="1853" height="945" />
+    </state>
+    <state x="825" y="272" width="434" height="455" key="com.intellij.testIntegration.createTest.CreateTestDialog/67.27.1853.945@67.27.1853.945" timestamp="1650683909783" />
+    <state x="1087" y="365" width="442" height="627" key="com.intellij.testIntegration.createTest.CreateTestDialog/67.27.2493.1305@67.27.2493.1305" timestamp="1650353422050" />
+    <state x="976" y="320" width="672" height="678" key="search.everywhere.popup" timestamp="1650348333803">
+      <screen x="67" y="27" width="2493" height="1305" />
+    </state>
+    <state x="976" y="320" width="672" height="678" key="search.everywhere.popup/67.27.2493.1305@67.27.2493.1305" timestamp="1650348333803" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/generator/ScriptParserTest.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/MainTest.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

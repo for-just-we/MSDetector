@@ -1,0 +1,9 @@
+/home/prophe/projects/java/static_research/phpExtractor/src/main/java/baseListener/PhpParserBaseVisitor.java
+/home/prophe/projects/java/static_research/phpExtractor/src/main/java/baseListener/PhpLexer.java
+/home/prophe/projects/java/static_research/phpExtractor/src/main/java/Main.java
+/home/prophe/projects/java/static_research/phpExtractor/src/main/java/baseListener/PhpParserListener.java
+/home/prophe/projects/java/static_research/phpExtractor/src/main/java/util/TokenGenerator.java
+/home/prophe/projects/java/static_research/phpExtractor/src/main/java/baseListener/PhpParserVisitor.java
+/home/prophe/projects/java/static_research/phpExtractor/src/main/java/baseListener/PhpBaseLexer.java
+/home/prophe/projects/java/static_research/phpExtractor/src/main/java/baseListener/PhpParserBaseListener.java
+/home/prophe/projects/java/static_research/phpExtractor/src/main/java/baseListener/PhpParser.java
