@@ -1,7 +1,6 @@
 import com.alibaba.fastjson.JSON;
 import generator.ScriptParser;
 import org.apache.commons.cli.*;
-import generator.TokenGenerator;
 
 import java.io.*;
 import java.util.Arrays;
