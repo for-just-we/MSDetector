@@ -23,6 +23,12 @@ We provide some testcases in dictionary phpProcessor/src/test/files.
 
 # Datasets
 
+## Pretrain datasets
+
+we utilize [Code Search Net](https://github.com/github/CodeSearchNet) dataset, the source datas are jsonl files, we utilize [CSN_process.py](https://github.com/for-just-we/MSDetector/blob/master/CSN_process.py) to parse jsonl files into PHP files.
+
+## Webshell datasets
+
 We first download datas from sources below:
 
 |  Type   | Url  |
@@ -36,7 +42,27 @@ We first download datas from sources below:
 | Normal  | https://github.com/smarty-php/smarty |
 | Normal  | https://github.com/yiisoft/yii |
 
-Then we perform data clean and data augment manually
+Then we perform data clean and data augment manually, we spent 2 months to process the dataset in following steps:
+
+- First of all, there are a large number of big files in the dataset, some of which even reach more than 2000 lines of code. This kind of huge code first goes beyond the processing scope of the deep learning model. Secondly, it is rarely appears in the real-world scene. In the real-world web penetration, the webshell used by the attacker is almost a pony, and the big files are usually very easy to be intercepted by the firewall.Therefore, for big files in the dataset, we first splits them. big files in the dataset usually contain many HTML tags, of which only the content in PHP tags is related to webshell, while big files usually contain multiple PHP tags. Therefore, we first eliminate the redundant HTML tags in the big code and only keep the PHP tags. Then, we manually divides the script containing multiple PHP tags into multiple scripts, and each script contains only one PHP tag. At the same time, the normal samples collected in this paper are downloaded from the open source PHP project. The PHP files in the normal samples usually contain multiple functions, and each function contains a large piece of code. Here we manually split these PHP files. After splitting, each script contains only 1 to 2 functions.
+
+
+- After previous step, we cut the large samples into small samples, but the text feature distribution of the data set is very uneven, which is easy to cause data bias. Dangerous functions such as encryption confusion functions, callback functions and reflection functions are usually called in webshell code. These functions hardly exist in the normal samples collected in this paper, but in fact, these functions are also applied in other normal scenarios. The model trained on such datasets is likely to have some bias against this kind of function calls, For example, when such function calls appear in the code segment, the model will automatically determine that the code segment belongs to webshell. In order to alleviate this bias, we downloaded some source codes calling such functions from GitHub according to the name of each function in following table, and added them to our white sample data set as white samples. We also manually inject some malicious code into this normal samples as webshell, which is Testset-2 in the paper.
+
+
+|  function type   | function name  |
+|  ----  | ----  |
+| encrypt and decrypt function | md5, crypt, sha1, urlencode, urldecode, base64_encode, base64_decode, str_rot13 |
+| string operation | chr, preg_replace, stripcslashes, addslashes, convert_uudecode, convert_uuencode, str_replace |
+| reflection | ReflectionClass,  ReflectFunction,  ReflectionMethod |
+| callback | call_user_func_array, call_user_func, array_filter, array_map, array_walk, usort |
+| compress and decompress | gzcompress, gzdeflate, gzencode, bzcompress |
+
+
+- After the previous preprocessing work, we apply some data agument operations to the dataset to expand the number of samples in the dataset. First, in PHP, there are many global variable names and function names with similar semantics. These variable names and function names can be replaced equivalently. For example, global variable name `$_Get`,`$_Post` and `$_Request` has same meaning when getting input messages. These global variables receive parameters from user requests. They have similar semantics and can be replaced equivalently. Similarly, `echo` and `print` are used to output information, so some equivalent substitutions can be made in the code. Then `gzdeflate`, `gzcompress` and `gzencode` are string compression functions. Different compression algorithms are used, but the use scenarios are similar. And `Base64_ encode`，`str_ Rot13` are encryption functions, which can also be replaced equivalently. Here, we write a tool to automatically select some samples randomly for data enhancement. This tool is simply implemented with regular expression. The principle of the automatic tool is roughly as follows. The tool itself contains a variable and function table that can be equivalent replaced. After giving the code that needs to be enhanced, the tool will detect how many positions in the input code fragment can be equivalent replaced. If there is no position for equivalent replacement, skip, if there is, Then, `m` positions are randomly selected from these positions for equivalent replacement. `m` is a random number greater than or equal to 1 and less than or equal to the number of replaceable positions. The variable name for replacement selection of these positions is also random.
+
+- After we apply the data augment operations, there may be scripts with the same content in the dataset. These repeated data items may make the detection effect of the detection system in this paper unreasonably high, so we need to carry out the de duplication operation, which cannot be distinguished by the file name alone. Therefore, we carry out the MD5 encryption operation on each PHP script, and find the scripts with the same content through the MD5 value, so as to carry out the file de-duplication. After the de-duplication operation, we divided our dataset into two parts: training set and test set. The training set contains 3280 webshell black samples and 3226 normal white samples, and the test set contains 930 webshell black samples and 987 normal white samples. This testset is Testset-1 in the paper.
+
 
 
 Unfortunately our dataset has been used in another project with another institute(our first party, also the charger of that project), they require us not to open-source datasets.
