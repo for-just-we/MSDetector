@@ -33,6 +33,9 @@ public class ScriptParser {
     private final Set<String> modifiers = new HashSet<>(Arrays.asList("Abstract", "Final", "Private", "Public", "Partial", "Protected"));
     private final Set<String> quoteSymbols = new HashSet<>(Arrays.asList("functionDeclaration", "foreachStatement", "formalParameter",
             "classStatement", "lambdaFunctionExpr", "lambdaFunctionUseVar", "actualArgument"));
+    
+    private final Set<String> ignoredFunctionNames = new HashSet<>(Arrays.asList("set_time_limit", "set_error_handler", "session_start",
+            "error_reporting", "ob_implicit_flush", "set_charset", "set_include_path", "set_exception_handler"));
 
 
     private final Map<String, String> constantTypes = new HashMap<>(){
@@ -314,6 +317,9 @@ public class ScriptParser {
         else if (funcNameNode.getTypeLabel().equals("classConstant"))
             parseClassConstant(funcNameNode, true);
         else {
+            // ignore function calls we do not need.
+            if (funcNameNode.getTypeLabel().equals("Label") && ignoredFunctionNames.contains(funcNameNode.getToken()))
+                return;
             if (funcNameNode.isLeaf()){
                 String funcName = funcNameTable.getOrDefault(funcNameNode.getToken(), funcNameNode.getToken());
                 tokenSequence.add(funcName);
