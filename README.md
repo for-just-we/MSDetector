@@ -73,7 +73,7 @@ Unfortunately our dataset has been used in another project with another institut
 
 # MSDetector
 
-## PreProcessModule
+## PreProcess Module
 
 The PreProcessModule is implemented in Java, the main class is `Main`, and the class to parse PHP file is `generator/ScriptParser`. We utilized Java Antlr API, at first we intend to implement the module in python, but it seems that there are some bugs in python-antlr API for PHP. 
 
@@ -137,7 +137,7 @@ when encounting string literals, we implement a string parser to determine the t
 It would be more efficient to implement string parser by machine learning, but the key issue is that it consume many time to label a string dataset.
 
 
-## DeepLearningModule
+## Deep-Learning Module
 
 Our method utilize [CodeBert](https://github.com/microsoft/CodeBERT) model, we simply add a linear lay on top of CodeBert to classify vectorized PHP file.
 
@@ -153,3 +153,24 @@ During pretraining(and training, detecting stages), a token in token sequence ma
 - if token `t1`(tag `n1`) is tokenized to `[t11, t12, t13]`, then its tag would be expanded to `B-n1, B-n2, B-n3`.
 
 - if token `t1` remains unchanged after tokenization, its tag would still be expanded to `B-n1`.
+
+
+# citation
+
+```
+@InProceedings{10.1007/978-3-031-10363-6_11,
+ author={   Baijun Cheng and
+               Yanhui Guo and
+               Yan Ren and
+               Gang Yang and
+               Guosheng Xu},
+ title={MSDetector: A Static PHP Webshell Detection System Based on Deep-Learning},
+ booktitle="Theoretical Aspects of Software Engineering",
+ year={2022},
+ publisher={Springer International Publishing},
+ address={Cham},
+ pages={155--172}
+}
+
+doi:https://link.springer.com/chapter/10.1007/978-3-031-10363-6_11
+```
